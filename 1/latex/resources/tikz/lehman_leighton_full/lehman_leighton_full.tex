@@ -1,0 +1,238 @@
+\documentclass[preview]{standalone}
+
+\usepackage[margin=1.7in]{geometry}
+
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, positioning}
+\usepackage{graphics}
+\usepackage{graphicx}
+\pgfplotsset{axis on top, compat = 1.3}
+
+\begin{document}
+	
+	% Set the overall layout of the tree
+	\tikzstyle{level 1}=[level distance=3cm, sibling distance=8cm]
+	\tikzstyle{level 2}=[level distance=3cm, sibling distance=4cm]
+	\tikzstyle{level 3}=[level distance=3cm, sibling distance=2cm]
+	\tikzstyle{level 4}=[level distance=3cm, sibling distance=1cm]
+	
+	% Define styles for bags and leafs
+	\tikzstyle{bag} = [text width=1em, text centered]
+	\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+	\begin{center}	
+	\begin{tikzpicture}[grow'=right, scale=1]
+	\node[end] {}
+	child [sibling distance=6cm] {
+		node[bag] {$1$}
+		child {
+			node[bag] {$1$}
+			child [sibling distance=1cm] {
+				node[bag] {$1$}
+				child {
+					node[end, label=right:{$1$}] {}
+					edge from parent
+					node[above] {\normalsize $1$}
+				}
+				edge from parent
+				node[above] {\normalsize $\frac{1}{2}$}
+			}
+			child {
+				node[bag] {$2$}
+				child {
+					node[end, label=right:{$1$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[below] {\normalsize $\frac{1}{2}$}
+			}
+			edge from parent
+			node[above] {\normalsize $1$}
+		}
+		edge from parent
+		node[above] {\normalsize $\frac{1}{4}$}
+	}
+	child {
+		node[bag] {$2$}
+		child {
+			node[bag] {$1$}
+			child [sibling distance=1cm] {
+				node[bag] {$1$}
+				child {
+					node[end, label=right:{$1$}] {}
+					edge from parent
+					node[above] {\normalsize $1$}
+				}
+				edge from parent
+				node[above] {\normalsize $\frac{1}{2}$}
+			}
+			child {
+				node[bag] {$2$}
+				child {
+					node[end, label=right:{$1$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[below] {\normalsize $\frac{1}{2}$}
+			}
+			edge from parent
+			node[above] {\normalsize $\frac{1}{2}$}
+		}
+		child {
+			node[bag] {$2$}
+			child {
+				node[bag] {$2$}
+				child {
+					node[end, label=right:{$1$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[above] {\normalsize $\frac{1}{2}$}
+			}
+			child {
+				node[bag] {$3$}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$3$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[below] {\normalsize $\frac{1}{2}$}
+			}
+			edge from parent
+			node[below] {\normalsize $\frac{1}{2}$}
+		}
+		edge from parent
+		node[above] {\normalsize $\frac{1}{4}$}
+	}
+	child {
+		node[bag] {$3$}
+		child {
+			node[bag] {$2$}
+			child {
+				node[bag] {$2$}
+				child {
+					node[end, label=right:{$1$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[above] {\normalsize $\frac{1}{2}$}
+			}
+			child {
+				node[bag] {$3$}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$3$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[below] {\normalsize $\frac{1}{2}$}
+			}
+			edge from parent
+			node[above] {\normalsize $\frac{1}{2}$}
+		}
+		child {
+			node[bag] {$3$}
+			child {
+				node[bag] {$3$}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$3$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[above] {\normalsize $\frac{1}{2}$}
+			}
+			child [sibling distance=1cm] {
+				node[bag] {$4$}
+				child {
+					node[end, label=right:{$3$}] {}
+					edge from parent
+					node[below] {\normalsize $1$}
+				}
+				edge from parent
+				node[below] {\normalsize $\frac{1}{2}$}
+			}
+			edge from parent
+			node[below] {\normalsize $\frac{1}{2}$}
+		}
+		edge from parent
+		node[below] {\normalsize $\frac{1}{4}$}
+	}
+	child [sibling distance=6cm] {
+		node[bag] {$4$}
+		child {
+			node[bag] {$3$}
+			child {
+				node[bag] {$3$}
+				child {
+					node[end, label=right:{$2$}] {}
+					edge from parent
+					node[above] {\normalsize $\frac{1}{2}$}
+				}
+				child {
+					node[end, label=right:{$3$}] {}
+					edge from parent
+					node[below] {\normalsize $\frac{1}{2}$}
+				}
+				edge from parent
+				node[above] {\normalsize $\frac{1}{2}$}
+			}
+			child [sibling distance=1cm] {
+				node[bag] {$4$}
+				child {
+					node[end, label=right:{$3$}] {}
+					edge from parent
+					node[below] {\normalsize $1$}
+				}
+				edge from parent
+				node[below] {\normalsize $\frac{1}{2}$}
+			}
+			edge from parent
+			node[below] {\normalsize $1$}
+		}
+		edge from parent
+		node[below] {\normalsize $\frac{1}{4}$}
+	};	
+	\end{tikzpicture}	
+\end{center}
+\end{document}
