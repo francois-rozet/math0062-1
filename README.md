@@ -14,3 +14,4 @@ Projets réalisés dans le cadre du cours *Éléments du calcul des probabilité
 ## Note
 
 * Le projet 1 a reçu la note de 18/20.
+* Le projet 2 a reçu la note de 18/20.
