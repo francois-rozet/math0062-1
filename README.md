@@ -10,3 +10,7 @@ Projets réalisés dans le cadre du cours *Éléments du calcul des probabilité
 ## Auteurs
 
 * **François Rozet** - [Donshel](https://github.com/Donshel)
+
+## Note
+
+* Le projet 1 a reçu la note de 18/20.
