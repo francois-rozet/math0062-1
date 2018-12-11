@@ -1,0 +1,131 @@
+\documentclass[preview]{standalone}
+
+\newcommand{\languages}{english, french}
+
+\input{../../../include/head.tex}
+
+%%%%%%%%%%
+
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\C}{\mathcal{C}}
+
+%%%%%%%%%%
+
+\begin{document}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\M = 1|\F,\C)$}} &                             \multicolumn{5}{c|}{$\C$}                              \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &      $1$       &      $2$       &      $3$       &      $4$       &      $5$       \\ \hline
+		\multirow{3}{*}{$\F$} &               $1$                & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ & $\frac{7}{20}$ \\ \hline
+	\end{tabular}
+	\hspace{0.5\mytextsize}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\M = 2|\F,\C)$}} &                                  \multicolumn{5}{c|}{$\C$}                                   \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &       $1$        &       $2$        &       $3$        &       $4$        &       $5$        \\ \hline
+		\multirow{3}{*}{$\F$} &               $1$                & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ & $\frac{37}{100}$ \\ \hline
+	\end{tabular}
+	\vspace{1\mytextsize} \newline
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\M = 3|\F,\C)$}} &                             \multicolumn{5}{c|}{$\C$}                              \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &      $1$       &      $2$       &      $3$       &      $4$       &      $5$       \\ \hline
+		\multirow{3}{*}{$\F$} &               $1$                & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ & $\frac{3}{25}$ \\ \hline
+	\end{tabular}
+	\hspace{0.5\mytextsize}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\M = 4|\F,\C)$}} &                             \multicolumn{5}{c|}{$\C$}                              \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &      $1$       &      $2$       &      $3$       &      $4$       &      $5$       \\ \hline
+		\multirow{3}{*}{$\F$} &               $1$                & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ & $\frac{4}{25}$ \\ \hline
+	\end{tabular}
+	\vspace{1\mytextsize} \newline
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\F = 1|\M,\C)$}} &                                 \multicolumn{5}{c|}{$\C$}                                  \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &       $1$        &       $2$       &       $3$        &       $4$        &       $5$       \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{41}{100}$ & $\frac{17}{50}$ & $\frac{37}{100}$ & $\frac{27}{100}$ & $\frac{16}{75}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{41}{100}$ & $\frac{17}{50}$ & $\frac{37}{100}$ & $\frac{27}{100}$ & $\frac{16}{75}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{41}{100}$ & $\frac{17}{50}$ & $\frac{37}{100}$ & $\frac{27}{100}$ & $\frac{16}{75}$ \\ \cline{2-7}
+		                      &               $4$                & $\frac{41}{100}$ & $\frac{17}{50}$ & $\frac{37}{100}$ & $\frac{27}{100}$ & $\frac{16}{75}$ \\ \hline
+	\end{tabular}
+	\hspace{0.5\mytextsize}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\F = 2|\M,\C)$}} &                              \multicolumn{5}{c|}{$\C$}                               \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &      $1$       &      $2$       &       $3$       &       $4$       &      $5$       \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{8}{25}$ & $\frac{7}{25}$ & $\frac{17}{50}$ & $\frac{17}{50}$ & $\frac{7}{75}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{8}{25}$ & $\frac{7}{25}$ & $\frac{17}{50}$ & $\frac{17}{50}$ & $\frac{7}{75}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{8}{25}$ & $\frac{7}{25}$ & $\frac{17}{50}$ & $\frac{17}{50}$ & $\frac{7}{75}$ \\ \cline{2-7}
+		                      &               $4$                & $\frac{8}{25}$ & $\frac{7}{25}$ & $\frac{17}{50}$ & $\frac{17}{50}$ & $\frac{7}{75}$ \\ \hline
+	\end{tabular}
+	\vspace{1\mytextsize} \newline
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\F = 3|\M,\C)$}} &                                 \multicolumn{5}{c|}{$\C$}                                  \\ \cline{3-7}
+		\multicolumn{2}{|c|}{}                                   &       $1$        &       $2$       &       $3$        &       $4$        &       $5$       \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{27}{100}$ & $\frac{19}{50}$ & $\frac{29}{100}$ & $\frac{39}{100}$ & $\frac{52}{75}$ \\ \cline{2-7}
+		                      &               $2$                & $\frac{27}{100}$ & $\frac{19}{50}$ & $\frac{29}{100}$ & $\frac{39}{100}$ & $\frac{52}{75}$ \\ \cline{2-7}
+		                      &               $3$                & $\frac{27}{100}$ & $\frac{19}{50}$ & $\frac{29}{100}$ & $\frac{39}{100}$ & $\frac{52}{75}$ \\ \cline{2-7}
+		                      &               $4$                & $\frac{27}{100}$ & $\frac{19}{50}$ & $\frac{29}{100}$ & $\frac{39}{100}$ & $\frac{52}{75}$ \\ \hline
+	\end{tabular}
+	\hspace{0.5\mytextsize}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\C = 1|\M,\F)$}} &               \multicolumn{3}{c|}{$\F$}                \\ \cline{3-5}
+		\multicolumn{2}{|c|}{}                                   &       $1$        &       $2$        &       $3$        \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{41}{170}$ & $\frac{32}{155}$ & $\frac{27}{175}$ \\ \cline{2-5}
+		                      &               $2$                & $\frac{41}{170}$ & $\frac{32}{155}$ & $\frac{27}{175}$ \\ \cline{2-5}
+		                      &               $3$                & $\frac{41}{170}$ & $\frac{32}{155}$ & $\frac{27}{175}$ \\ \cline{2-5}
+		                      &               $4$                & $\frac{41}{170}$ & $\frac{32}{155}$ & $\frac{27}{175}$ \\ \hline
+	\end{tabular}
+	\vspace{1\mytextsize} \newline
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\C = 2|\M,\F)$}} &               \multicolumn{3}{c|}{$\F$}                \\ \cline{3-5}
+		\multicolumn{2}{|c|}{}                                 &       $1$        &      $2$       &        $3$         \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{31}{100}$ & $\frac{7}{25}$ & $\frac{589}{1750}$ \\ \cline{2-5}
+		                    &               $2$                & $\frac{31}{100}$ & $\frac{7}{25}$ & $\frac{589}{1750}$ \\ \cline{2-5}
+		                    &               $3$                & $\frac{31}{100}$ & $\frac{7}{25}$ & $\frac{589}{1750}$ \\ \cline{2-5}
+		                    &               $4$                & $\frac{31}{100}$ & $\frac{7}{25}$ & $\frac{589}{1750}$ \\ \hline
+	\end{tabular}
+	\hspace{0.5\mytextsize}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\C = 3|\M,\F)$}} &                  \multicolumn{3}{c|}{$\F$}                  \\ \cline{3-5}
+		\multicolumn{2}{|c|}{}                                   &        $1$         &        $2$        &        $3$         \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{407}{1700}$ & $\frac{187}{775}$ & $\frac{319}{1750}$ \\ \cline{2-5}
+		                      &               $2$                & $\frac{407}{1700}$ & $\frac{187}{775}$ & $\frac{319}{1750}$ \\ \cline{2-5}
+		                      &               $3$                & $\frac{407}{1700}$ & $\frac{187}{775}$ & $\frac{319}{1750}$ \\ \cline{2-5}
+		                      &               $4$                & $\frac{407}{1700}$ & $\frac{187}{775}$ & $\frac{319}{1750}$ \\ \hline
+	\end{tabular}
+	\vspace{1\mytextsize} \newline
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\C = 4|\M,\F)$}} &                \multicolumn{3}{c|}{$\F$}                 \\ \cline{3-5}
+		\multicolumn{2}{|c|}{}                                   &       $1$        &        $2$        &        $3$        \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{81}{425}$ & $\frac{204}{775}$ & $\frac{234}{875}$ \\ \cline{2-5}
+		                      &               $2$                & $\frac{81}{425}$ & $\frac{204}{775}$ & $\frac{234}{875}$ \\ \cline{2-5}
+		                      &               $3$                & $\frac{81}{425}$ & $\frac{204}{775}$ & $\frac{234}{875}$ \\ \cline{2-5}
+		                      &               $4$                & $\frac{81}{425}$ & $\frac{204}{775}$ & $\frac{234}{875}$ \\ \hline
+	\end{tabular}
+	\hspace{0.5\mytextsize}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{$P(\C = 5|\M,\F)$}} &              \multicolumn{3}{c|}{$\F$}               \\ \cline{3-5}
+		\multicolumn{2}{|c|}{}                                   &       $1$       &       $2$       &       $3$        \\ \hline
+		\multirow{4}{*}{$\M$} &               $1$                & $\frac{8}{425}$ & $\frac{7}{775}$ & $\frac{52}{875}$ \\ \cline{2-5}
+		                      &               $2$                & $\frac{8}{425}$ & $\frac{7}{775}$ & $\frac{52}{875}$ \\ \cline{2-5}
+		                      &               $3$                & $\frac{8}{425}$ & $\frac{7}{775}$ & $\frac{52}{875}$ \\ \cline{2-5}
+		                      &               $4$                & $\frac{8}{425}$ & $\frac{7}{775}$ & $\frac{52}{875}$ \\ \hline
+	\end{tabular}
+\end{document}
