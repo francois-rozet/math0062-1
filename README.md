@@ -9,7 +9,7 @@ Projets réalisés dans le cadre du cours *Éléments du calcul des probabilité
 
 ## Auteurs
 
-* **François Rozet** - [Donshel](https://github.com/Donshel)
+* **François Rozet** - [francois-rozet](https://github.com/francois-rozet)
 
 ## Note
 
